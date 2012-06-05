@@ -9,9 +9,9 @@
 define('DB_SERVER', "www.vgcorporativo.com:3306");
 
 //database login name
-define('DB_USER', "vgcorpor");
+define('DB_USER', "******");
 //database login password
-define('DB_PASS', "americano");
+define('DB_PASS', "******");
 
 //database name
 define('DB_DATABASE', "vgcorpor_sistema");
