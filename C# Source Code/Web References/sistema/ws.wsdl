@@ -1,0 +1,1450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.vgcorporativo.com/soap/ServicioCasosFiscales" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://schemas.xmlsoap.org/wsdl/" targetNamespace="http://www.vgcorporativo.com/soap/ServicioCasosFiscales" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.vgcorporativo.com/soap/ServicioCasosFiscales">
+      <xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/" />
+      <xsd:import namespace="http://schemas.xmlsoap.org/wsdl/" />
+      <xsd:complexType name="ArregloAbogados">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="tns:Abogados[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="Abogados">
+        <xsd:all>
+          <xsd:element name="ID_Abogado" type="xsd:int" />
+          <xsd:element name="Nombre" type="xsd:string" />
+          <xsd:element name="Email" type="xsd:string" />
+          <xsd:element name="Password" type="xsd:string" />
+          <xsd:element name="FechaN" type="xsd:date" />
+          <xsd:element name="Direccion" type="xsd:string" />
+          <xsd:element name="Telefono" type="xsd:string" />
+          <xsd:element name="Celular" type="xsd:string" />
+          <xsd:element name="Nextel" type="xsd:string" />
+          <xsd:element name="Superusuario" type="xsd:boolean" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ArregloClientes">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="tns:Clientes[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="Clientes">
+        <xsd:all>
+          <xsd:element name="ID_Cliente" type="xsd:int" />
+          <xsd:element name="Nombre" type="xsd:string" />
+          <xsd:element name="Email" type="xsd:string" />
+          <xsd:element name="FechaN" type="xsd:date" />
+          <xsd:element name="Direccion" type="xsd:string" />
+          <xsd:element name="Telefono" type="xsd:string" />
+          <xsd:element name="Celular" type="xsd:string" />
+          <xsd:element name="Nextel" type="xsd:string" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ArregloAsuntos">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="tns:Asuntos[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="Asuntos">
+        <xsd:all>
+          <xsd:element name="ID_Asunto" type="xsd:int" />
+          <xsd:element name="Nombre" type="xsd:string" />
+          <xsd:element name="Descripcion" type="xsd:string" />
+          <xsd:element name="Fecha_inicio" type="xsd:date" />
+          <xsd:element name="Fecha_fin" type="xsd:date" />
+          <xsd:element name="ID_Estado" type="xsd:int" />
+          <xsd:element name="ID_Proceso" type="xsd:int" />
+          <xsd:element name="ID_Autoridad" type="xsd:int" />
+          <xsd:element name="ID_Cliente" type="xsd:int" />
+          <xsd:element name="ID_Abogado" type="xsd:int" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ArregloArchivo">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="tns:Archivo[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="Archivo">
+        <xsd:all>
+          <xsd:element name="ID_Archivo" type="xsd:int" />
+          <xsd:element name="ID_Etapa" type="xsd:int" />
+          <xsd:element name="ID_Asunto" type="xsd:int" />
+          <xsd:element name="Descripcion" type="xsd:string" />
+          <xsd:element name="Nombre" type="xsd:string" />
+          <xsd:element name="Ruta" type="xsd:string" />
+          <xsd:element name="Tamano" type="xsd:string" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ArregloAutoridad">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="tns:Autoridad[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="Autoridad">
+        <xsd:all>
+          <xsd:element name="ID_Autoridad" type="xsd:int" />
+          <xsd:element name="Nombre" type="xsd:string" />
+          <xsd:element name="Descripcion" type="xsd:string" />
+          <xsd:element name="Telefono" type="xsd:string" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ArregloCita">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="tns:Cita[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="Cita">
+        <xsd:all>
+          <xsd:element name="ID_Cita" type="xsd:int" />
+          <xsd:element name="ID_Cliente" type="xsd:int" />
+          <xsd:element name="ID_Asunto" type="xsd:int" />
+          <xsd:element name="ID_Abogado" type="xsd:int" />
+          <xsd:element name="Lugar" type="xsd:string" />
+          <xsd:element name="Fecha" type="xsd:date" />
+          <xsd:element name="Hora" type="xsd:date" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ArregloConvenio">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="tns:Convenio[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="Convenio">
+        <xsd:all>
+          <xsd:element name="ID_Convenio" type="xsd:int" />
+          <xsd:element name="ID_Asunto" type="xsd:int" />
+          <xsd:element name="Cantidad" type="xsd:double" />
+          <xsd:element name="Descripcion" type="xsd:string" />
+          <xsd:element name="ID_Tipo_Moneda" type="xsd:int" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ArregloDiaNoHabil">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="tns:DiaNoHabil[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="DiaNoHabil">
+        <xsd:all>
+          <xsd:element name="ID_DiaNoHabil" type="xsd:int" />
+          <xsd:element name="Dia" type="xsd:date" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ArregloEstadoAsunto">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="tns:EstadoAsunto[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="EstadoAsunto">
+        <xsd:all>
+          <xsd:element name="ID_Estado" type="xsd:int" />
+          <xsd:element name="Nombre" type="xsd:string" />
+          <xsd:element name="Descripcion" type="xsd:string" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ArregloEstadoProceso">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="tns:EstadoProceso[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="EstadoProceso">
+        <xsd:all>
+          <xsd:element name="ID_EstadoProceso" type="xsd:int" />
+          <xsd:element name="Nombre" type="xsd:string" />
+          <xsd:element name="Descripcion" type="xsd:string" />
+          <xsd:element name="Dias_Vencimiento" type="xsd:int" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ArregloEtapa">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="tns:Etapa[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="Etapa">
+        <xsd:all>
+          <xsd:element name="ID_Etapa" type="xsd:int" />
+          <xsd:element name="ID_Asunto" type="xsd:int" />
+          <xsd:element name="Fecha_Inicio" type="xsd:date" />
+          <xsd:element name="Descripcion" type="xsd:string" />
+          <xsd:element name="ID_EstadoProceso" type="xsd:int" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ArregloPago">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="tns:Pago[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="Pago">
+        <xsd:all>
+          <xsd:element name="ID_Pago" type="xsd:int" />
+          <xsd:element name="ID_Convenio" type="xsd:int" />
+          <xsd:element name="ID_Asunto" type="xsd:int" />
+          <xsd:element name="Cantidad" type="xsd:double" />
+          <xsd:element name="Fecha" type="xsd:date" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ArregloProceso">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="tns:Proceso[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="Proceso">
+        <xsd:all>
+          <xsd:element name="ID_Proceso" type="xsd:int" />
+          <xsd:element name="NumeroEtapas" type="xsd:int" />
+          <xsd:element name="Nombre" type="xsd:string" />
+          <xsd:element name="Descripcion" type="xsd:string" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ArregloTipoMoneda">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="tns:TipoMoneda[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="TipoMoneda">
+        <xsd:all>
+          <xsd:element name="ID_Tipo_Moneda" type="xsd:int" />
+          <xsd:element name="Nombre" type="xsd:string" />
+        </xsd:all>
+      </xsd:complexType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="addAbogadosRequest">
+    <wsdl:part name="nombre" type="xsd:string" />
+    <wsdl:part name="email" type="xsd:string" />
+    <wsdl:part name="password" type="xsd:string" />
+    <wsdl:part name="fechan" type="xsd:date" />
+    <wsdl:part name="direccion" type="xsd:string" />
+    <wsdl:part name="telefono" type="xsd:string" />
+    <wsdl:part name="celular" type="xsd:string" />
+    <wsdl:part name="nextel" type="xsd:string" />
+    <wsdl:part name="superusuario" type="xsd:boolean" />
+  </wsdl:message>
+  <wsdl:message name="addAbogadosResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="updateAbogadosRequest">
+    <wsdl:part name="id_abogado" type="xsd:string" />
+    <wsdl:part name="nombre" type="xsd:string" />
+    <wsdl:part name="email" type="xsd:string" />
+    <wsdl:part name="password" type="xsd:string" />
+    <wsdl:part name="fechan" type="xsd:date" />
+    <wsdl:part name="direccion" type="xsd:string" />
+    <wsdl:part name="telefono" type="xsd:string" />
+    <wsdl:part name="celular" type="xsd:string" />
+    <wsdl:part name="nextel" type="xsd:string" />
+    <wsdl:part name="superusuario" type="xsd:boolean" />
+  </wsdl:message>
+  <wsdl:message name="updateAbogadosResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="getAbogadosRequest">
+    <wsdl:part name="columna" type="xsd:string" />
+    <wsdl:part name="filtro" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="getAbogadosResponse">
+    <wsdl:part name="return" type="tns:ArregloAbogados" />
+  </wsdl:message>
+  <wsdl:message name="deleteAbogadosRequest">
+    <wsdl:part name="id_abogado" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="deleteAbogadosResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="loginRequest">
+    <wsdl:part name="email" type="xsd:string" />
+    <wsdl:part name="password" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="loginResponse">
+    <wsdl:part name="return" type="xsd:boolean" />
+  </wsdl:message>
+  <wsdl:message name="addClienteRequest">
+    <wsdl:part name="nombre" type="xsd:string" />
+    <wsdl:part name="email" type="xsd:string" />
+    <wsdl:part name="fechan" type="xsd:date" />
+    <wsdl:part name="direccion" type="xsd:string" />
+    <wsdl:part name="telefono" type="xsd:string" />
+    <wsdl:part name="celular" type="xsd:string" />
+    <wsdl:part name="nextel" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="addClienteResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="updateClienteRequest">
+    <wsdl:part name="id_cliente" type="xsd:string" />
+    <wsdl:part name="nombre" type="xsd:string" />
+    <wsdl:part name="email" type="xsd:string" />
+    <wsdl:part name="fechan" type="xsd:date" />
+    <wsdl:part name="direccion" type="xsd:string" />
+    <wsdl:part name="telefono" type="xsd:string" />
+    <wsdl:part name="celular" type="xsd:string" />
+    <wsdl:part name="nextel" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="updateClienteResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="getClienteRequest">
+    <wsdl:part name="columna" type="xsd:string" />
+    <wsdl:part name="filtro" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="getClienteResponse">
+    <wsdl:part name="return" type="tns:ArregloClientes" />
+  </wsdl:message>
+  <wsdl:message name="deleteClienteRequest">
+    <wsdl:part name="id_cliente" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="deleteClienteResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="addAsuntoRequest">
+    <wsdl:part name="nombre" type="xsd:string" />
+    <wsdl:part name="descripcion" type="xsd:string" />
+    <wsdl:part name="fechainicio" type="xsd:date" />
+    <wsdl:part name="fechafin" type="xsd:date" />
+    <wsdl:part name="id_estado" type="xsd:int" />
+    <wsdl:part name="id_proceso" type="xsd:int" />
+    <wsdl:part name="id_autoridad" type="xsd:int" />
+    <wsdl:part name="id_cliente" type="xsd:int" />
+    <wsdl:part name="id_abogado" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="addAsuntoResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="updateAsuntoRequest">
+    <wsdl:part name="id_asunto" type="xsd:string" />
+    <wsdl:part name="nombre" type="xsd:string" />
+    <wsdl:part name="descripcion" type="xsd:string" />
+    <wsdl:part name="fechainicio" type="xsd:date" />
+    <wsdl:part name="fechafin" type="xsd:date" />
+    <wsdl:part name="id_estado" type="xsd:int" />
+    <wsdl:part name="id_proceso" type="xsd:int" />
+    <wsdl:part name="id_autoridad" type="xsd:int" />
+    <wsdl:part name="id_cliente" type="xsd:int" />
+    <wsdl:part name="id_abogado" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="updateAsuntoResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="addArchivoRequest">
+    <wsdl:part name="id_etapa" type="xsd:int" />
+    <wsdl:part name="id_asunto" type="xsd:int" />
+    <wsdl:part name="descripcion" type="xsd:string" />
+    <wsdl:part name="nombre" type="xsd:string" />
+    <wsdl:part name="ruta" type="xsd:string" />
+    <wsdl:part name="tamano" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="addArchivoResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="deleteArchivoRequest">
+    <wsdl:part name="id_archivo" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="deleteArchivoResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="getArchivoRequest">
+    <wsdl:part name="columna" type="xsd:string" />
+    <wsdl:part name="filtro" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="getArchivoResponse">
+    <wsdl:part name="return" type="tns:ArregloArchivo" />
+  </wsdl:message>
+  <wsdl:message name="getAsuntoRequest">
+    <wsdl:part name="columna" type="xsd:string" />
+    <wsdl:part name="filtro1" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="getAsuntoResponse">
+    <wsdl:part name="return" type="tns:ArregloAsuntos" />
+  </wsdl:message>
+  <wsdl:message name="getAsunto2Request">
+    <wsdl:part name="columna" type="xsd:string" />
+    <wsdl:part name="filtro1" type="xsd:string" />
+    <wsdl:part name="filtro2" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="getAsunto2Response">
+    <wsdl:part name="return" type="tns:ArregloAsuntos" />
+  </wsdl:message>
+  <wsdl:message name="deleteAsuntoRequest">
+    <wsdl:part name="id_asunto" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="deleteAsuntoResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="addAutoridadRequest">
+    <wsdl:part name="nombre" type="xsd:string" />
+    <wsdl:part name="descripcion" type="xsd:string" />
+    <wsdl:part name="telefono" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="addAutoridadResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="updateAutoridadRequest">
+    <wsdl:part name="id_asunto" type="xsd:string" />
+    <wsdl:part name="nombre" type="xsd:string" />
+    <wsdl:part name="descripcion" type="xsd:string" />
+    <wsdl:part name="telefono" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="updateAutoridadResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="getAutoridadRequest">
+    <wsdl:part name="columna" type="xsd:string" />
+    <wsdl:part name="filtro" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="getAutoridadResponse">
+    <wsdl:part name="return" type="tns:ArregloAutoridad" />
+  </wsdl:message>
+  <wsdl:message name="deleteAutoridadRequest">
+    <wsdl:part name="id_autoridad" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="deleteAutoridadResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="addCitaRequest">
+    <wsdl:part name="id_cliente" type="xsd:int" />
+    <wsdl:part name="id_asunto" type="xsd:int" />
+    <wsdl:part name="id_abogado" type="xsd:int" />
+    <wsdl:part name="lugar" type="xsd:string" />
+    <wsdl:part name="fecha" type="xsd:date" />
+    <wsdl:part name="hora" type="xsd:time" />
+  </wsdl:message>
+  <wsdl:message name="addCitaResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="updateCitaRequest">
+    <wsdl:part name="id_cita" type="xsd:int" />
+    <wsdl:part name="id_cliente" type="xsd:int" />
+    <wsdl:part name="id_asunto" type="xsd:int" />
+    <wsdl:part name="id_abogado" type="xsd:int" />
+    <wsdl:part name="lugar" type="xsd:string" />
+    <wsdl:part name="fecha" type="xsd:date" />
+    <wsdl:part name="hora" type="xsd:time" />
+  </wsdl:message>
+  <wsdl:message name="updateCitaResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="getCitaRequest">
+    <wsdl:part name="columna" type="xsd:string" />
+    <wsdl:part name="filtro" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="getCitaResponse">
+    <wsdl:part name="return" type="tns:ArregloCita" />
+  </wsdl:message>
+  <wsdl:message name="deleteCitaRequest">
+    <wsdl:part name="id_cita" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="deleteCitaResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="addConvenioRequest">
+    <wsdl:part name="id_asunto" type="xsd:int" />
+    <wsdl:part name="cantidad" type="xsd:double" />
+    <wsdl:part name="descripcion" type="xsd:string" />
+    <wsdl:part name="id_tipo_moneda" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="addConvenioResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="updateConvenioRequest">
+    <wsdl:part name="id_convenio" type="xsd:int" />
+    <wsdl:part name="id_asunto" type="xsd:int" />
+    <wsdl:part name="cantidad" type="xsd:double" />
+    <wsdl:part name="descripcion" type="xsd:string" />
+    <wsdl:part name="id_tipo_moneda" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="updateConvenioResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="getConvenioRequest">
+    <wsdl:part name="columna" type="xsd:string" />
+    <wsdl:part name="filtro" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="getConvenioResponse">
+    <wsdl:part name="return" type="tns:ArregloConvenio" />
+  </wsdl:message>
+  <wsdl:message name="deleteConvenioRequest">
+    <wsdl:part name="id_convenio" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="deleteConvenioResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="addDiaNoHabilRequest">
+    <wsdl:part name="dia" type="xsd:date" />
+  </wsdl:message>
+  <wsdl:message name="addDiaNoHabilResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="updateDiaNoHabilRequest">
+    <wsdl:part name="id_dianohabil" type="xsd:int" />
+    <wsdl:part name="dia" type="xsd:date" />
+  </wsdl:message>
+  <wsdl:message name="updateDiaNoHabilResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="getDiaNoHabilRequest">
+    <wsdl:part name="columna" type="xsd:string" />
+    <wsdl:part name="filtro" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="getDiaNoHabilResponse">
+    <wsdl:part name="return" type="tns:ArregloDiaNoHabil" />
+  </wsdl:message>
+  <wsdl:message name="deleteDiaNoHabilRequest">
+    <wsdl:part name="id_dianohabil" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="deleteDiaNoHabilResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="addEstadoAsuntoRequest">
+    <wsdl:part name="Nombre" type="xsd:string" />
+    <wsdl:part name="Descripcion" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="addEstadoAsuntoResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="updateEstadoAsuntoRequest">
+    <wsdl:part name="id_estado" type="xsd:int" />
+    <wsdl:part name="nombre" type="xsd:string" />
+    <wsdl:part name="descripcion" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="updateEstadoAsuntoResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="getEstadoAsuntoRequest">
+    <wsdl:part name="columna" type="xsd:string" />
+    <wsdl:part name="filtro" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="getEstadoAsuntoResponse">
+    <wsdl:part name="return" type="tns:ArregloEstadoAsunto" />
+  </wsdl:message>
+  <wsdl:message name="deleteEstadoAsuntoRequest">
+    <wsdl:part name="id_estado" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="deleteEstadoAsuntoResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="addEstadoProcesoRequest">
+    <wsdl:part name="nombre" type="xsd:string" />
+    <wsdl:part name="descripcion" type="xsd:string" />
+    <wsdl:part name="dias_vencimiento" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="addEstadoProcesoResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="updateEstadoProcesoRequest">
+    <wsdl:part name="id_estado" type="xsd:int" />
+    <wsdl:part name="nombre" type="xsd:string" />
+    <wsdl:part name="descripcion" type="xsd:string" />
+    <wsdl:part name="dias_vencimiento" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="updateEstadoProcesoResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="getEstadoProcesoRequest">
+    <wsdl:part name="columna" type="xsd:string" />
+    <wsdl:part name="filtro" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="getEstadoProcesoResponse">
+    <wsdl:part name="return" type="tns:ArregloEstadoProceso" />
+  </wsdl:message>
+  <wsdl:message name="deleteEstadoProcesoRequest">
+    <wsdl:part name="id_estado" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="deleteEstadoProcesoResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="addEtapaRequest">
+    <wsdl:part name="id_asunto" type="xsd:int" />
+    <wsdl:part name="fecha_inicio" type="xsd:date" />
+    <wsdl:part name="descripcion" type="xsd:string" />
+    <wsdl:part name="id_estadoproceso" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="addEtapaResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="updateEtapaRequest">
+    <wsdl:part name="id_etapa" type="xsd:int" />
+    <wsdl:part name="id_asunto" type="xsd:int" />
+    <wsdl:part name="fecha_inicio" type="xsd:date" />
+    <wsdl:part name="descripcion" type="xsd:string" />
+    <wsdl:part name="id_estadoproceso" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="updateEtapaResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="getEtapaRequest">
+    <wsdl:part name="columna" type="xsd:string" />
+    <wsdl:part name="filtro" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="getEtapaResponse">
+    <wsdl:part name="return" type="tns:ArregloEtapa" />
+  </wsdl:message>
+  <wsdl:message name="deleteEtapaRequest">
+    <wsdl:part name="id_etapa" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="deleteEtapaResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="addPagoRequest">
+    <wsdl:part name="id_convenio" type="xsd:int" />
+    <wsdl:part name="id_asunto" type="xsd:int" />
+    <wsdl:part name="cantidad" type="xsd:double" />
+    <wsdl:part name="fecha" type="xsd:date" />
+  </wsdl:message>
+  <wsdl:message name="addPagoResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="updatePagoRequest">
+    <wsdl:part name="id_pago" type="xsd:int" />
+    <wsdl:part name="id_convenio" type="xsd:int" />
+    <wsdl:part name="id_asunto" type="xsd:int" />
+    <wsdl:part name="cantidad" type="xsd:double" />
+    <wsdl:part name="fecha" type="xsd:date" />
+  </wsdl:message>
+  <wsdl:message name="updatePagoResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="getPagoRequest">
+    <wsdl:part name="columna" type="xsd:string" />
+    <wsdl:part name="filtro" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="getPagoResponse">
+    <wsdl:part name="return" type="tns:ArregloPago" />
+  </wsdl:message>
+  <wsdl:message name="deletePagoRequest">
+    <wsdl:part name="id_pago" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="deletePagoResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="addProcesoRequest">
+    <wsdl:part name="numeroetapas" type="xsd:int" />
+    <wsdl:part name="nombre" type="xsd:string" />
+    <wsdl:part name="descripcion" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="addProcesoResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="updateProcesoRequest">
+    <wsdl:part name="id_proceso" type="xsd:int" />
+    <wsdl:part name="numeroetapas" type="xsd:int" />
+    <wsdl:part name="nombre" type="xsd:string" />
+    <wsdl:part name="descripcion" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="updateProcesoResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="getProcesoRequest">
+    <wsdl:part name="columna" type="xsd:string" />
+    <wsdl:part name="filtro" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="getProcesoResponse">
+    <wsdl:part name="return" type="tns:ArregloProceso" />
+  </wsdl:message>
+  <wsdl:message name="deleteProcesoRequest">
+    <wsdl:part name="id_proceso" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="deleteProcesoResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="addTipoMonedaRequest">
+    <wsdl:part name="nombre" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="addTipoMonedaResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="updateTipoMonedaRequest">
+    <wsdl:part name="id_tipo_moneda" type="xsd:int" />
+    <wsdl:part name="nombre" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="updateTipoMonedaResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="getTipoMonedaRequest" />
+  <wsdl:message name="getTipoMonedaResponse">
+    <wsdl:part name="return" type="tns:ArregloTipoMoneda" />
+  </wsdl:message>
+  <wsdl:message name="deleteTipoMonedaRequest">
+    <wsdl:part name="id_tipo_moneda" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="deleteTipoMonedaResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:portType name="ServicioCasosFiscalesPortType">
+    <wsdl:operation name="addAbogados">
+      <wsdl:input message="tns:addAbogadosRequest" />
+      <wsdl:output message="tns:addAbogadosResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="updateAbogados">
+      <wsdl:input message="tns:updateAbogadosRequest" />
+      <wsdl:output message="tns:updateAbogadosResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getAbogados">
+      <wsdl:input message="tns:getAbogadosRequest" />
+      <wsdl:output message="tns:getAbogadosResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteAbogados">
+      <wsdl:input message="tns:deleteAbogadosRequest" />
+      <wsdl:output message="tns:deleteAbogadosResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="login">
+      <wsdl:input message="tns:loginRequest" />
+      <wsdl:output message="tns:loginResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="addCliente">
+      <wsdl:input message="tns:addClienteRequest" />
+      <wsdl:output message="tns:addClienteResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="updateCliente">
+      <wsdl:input message="tns:updateClienteRequest" />
+      <wsdl:output message="tns:updateClienteResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getCliente">
+      <wsdl:input message="tns:getClienteRequest" />
+      <wsdl:output message="tns:getClienteResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteCliente">
+      <wsdl:input message="tns:deleteClienteRequest" />
+      <wsdl:output message="tns:deleteClienteResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="addAsunto">
+      <wsdl:input message="tns:addAsuntoRequest" />
+      <wsdl:output message="tns:addAsuntoResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="updateAsunto">
+      <wsdl:input message="tns:updateAsuntoRequest" />
+      <wsdl:output message="tns:updateAsuntoResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="addArchivo">
+      <wsdl:input message="tns:addArchivoRequest" />
+      <wsdl:output message="tns:addArchivoResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteArchivo">
+      <wsdl:input message="tns:deleteArchivoRequest" />
+      <wsdl:output message="tns:deleteArchivoResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getArchivo">
+      <wsdl:input message="tns:getArchivoRequest" />
+      <wsdl:output message="tns:getArchivoResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getAsunto">
+      <wsdl:input message="tns:getAsuntoRequest" />
+      <wsdl:output message="tns:getAsuntoResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getAsunto2">
+      <wsdl:input message="tns:getAsunto2Request" />
+      <wsdl:output message="tns:getAsunto2Response" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteAsunto">
+      <wsdl:input message="tns:deleteAsuntoRequest" />
+      <wsdl:output message="tns:deleteAsuntoResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="addAutoridad">
+      <wsdl:input message="tns:addAutoridadRequest" />
+      <wsdl:output message="tns:addAutoridadResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="updateAutoridad">
+      <wsdl:input message="tns:updateAutoridadRequest" />
+      <wsdl:output message="tns:updateAutoridadResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getAutoridad">
+      <wsdl:input message="tns:getAutoridadRequest" />
+      <wsdl:output message="tns:getAutoridadResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteAutoridad">
+      <wsdl:input message="tns:deleteAutoridadRequest" />
+      <wsdl:output message="tns:deleteAutoridadResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="addCita">
+      <wsdl:input message="tns:addCitaRequest" />
+      <wsdl:output message="tns:addCitaResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="updateCita">
+      <wsdl:input message="tns:updateCitaRequest" />
+      <wsdl:output message="tns:updateCitaResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getCita">
+      <wsdl:input message="tns:getCitaRequest" />
+      <wsdl:output message="tns:getCitaResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteCita">
+      <wsdl:input message="tns:deleteCitaRequest" />
+      <wsdl:output message="tns:deleteCitaResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="addConvenio">
+      <wsdl:input message="tns:addConvenioRequest" />
+      <wsdl:output message="tns:addConvenioResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="updateConvenio">
+      <wsdl:input message="tns:updateConvenioRequest" />
+      <wsdl:output message="tns:updateConvenioResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getConvenio">
+      <wsdl:input message="tns:getConvenioRequest" />
+      <wsdl:output message="tns:getConvenioResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteConvenio">
+      <wsdl:input message="tns:deleteConvenioRequest" />
+      <wsdl:output message="tns:deleteConvenioResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="addDiaNoHabil">
+      <wsdl:input message="tns:addDiaNoHabilRequest" />
+      <wsdl:output message="tns:addDiaNoHabilResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="updateDiaNoHabil">
+      <wsdl:input message="tns:updateDiaNoHabilRequest" />
+      <wsdl:output message="tns:updateDiaNoHabilResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getDiaNoHabil">
+      <wsdl:input message="tns:getDiaNoHabilRequest" />
+      <wsdl:output message="tns:getDiaNoHabilResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteDiaNoHabil">
+      <wsdl:input message="tns:deleteDiaNoHabilRequest" />
+      <wsdl:output message="tns:deleteDiaNoHabilResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="addEstadoAsunto">
+      <wsdl:input message="tns:addEstadoAsuntoRequest" />
+      <wsdl:output message="tns:addEstadoAsuntoResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="updateEstadoAsunto">
+      <wsdl:input message="tns:updateEstadoAsuntoRequest" />
+      <wsdl:output message="tns:updateEstadoAsuntoResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getEstadoAsunto">
+      <wsdl:input message="tns:getEstadoAsuntoRequest" />
+      <wsdl:output message="tns:getEstadoAsuntoResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteEstadoAsunto">
+      <wsdl:input message="tns:deleteEstadoAsuntoRequest" />
+      <wsdl:output message="tns:deleteEstadoAsuntoResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="addEstadoProceso">
+      <wsdl:input message="tns:addEstadoProcesoRequest" />
+      <wsdl:output message="tns:addEstadoProcesoResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="updateEstadoProceso">
+      <wsdl:input message="tns:updateEstadoProcesoRequest" />
+      <wsdl:output message="tns:updateEstadoProcesoResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getEstadoProceso">
+      <wsdl:input message="tns:getEstadoProcesoRequest" />
+      <wsdl:output message="tns:getEstadoProcesoResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteEstadoProceso">
+      <wsdl:input message="tns:deleteEstadoProcesoRequest" />
+      <wsdl:output message="tns:deleteEstadoProcesoResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="addEtapa">
+      <wsdl:input message="tns:addEtapaRequest" />
+      <wsdl:output message="tns:addEtapaResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="updateEtapa">
+      <wsdl:input message="tns:updateEtapaRequest" />
+      <wsdl:output message="tns:updateEtapaResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getEtapa">
+      <wsdl:input message="tns:getEtapaRequest" />
+      <wsdl:output message="tns:getEtapaResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteEtapa">
+      <wsdl:input message="tns:deleteEtapaRequest" />
+      <wsdl:output message="tns:deleteEtapaResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="addPago">
+      <wsdl:input message="tns:addPagoRequest" />
+      <wsdl:output message="tns:addPagoResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="updatePago">
+      <wsdl:input message="tns:updatePagoRequest" />
+      <wsdl:output message="tns:updatePagoResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getPago">
+      <wsdl:input message="tns:getPagoRequest" />
+      <wsdl:output message="tns:getPagoResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="deletePago">
+      <wsdl:input message="tns:deletePagoRequest" />
+      <wsdl:output message="tns:deletePagoResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="addProceso">
+      <wsdl:input message="tns:addProcesoRequest" />
+      <wsdl:output message="tns:addProcesoResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="updateProceso">
+      <wsdl:input message="tns:updateProcesoRequest" />
+      <wsdl:output message="tns:updateProcesoResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getProceso">
+      <wsdl:input message="tns:getProcesoRequest" />
+      <wsdl:output message="tns:getProcesoResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteProceso">
+      <wsdl:input message="tns:deleteProcesoRequest" />
+      <wsdl:output message="tns:deleteProcesoResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="addTipoMoneda">
+      <wsdl:input message="tns:addTipoMonedaRequest" />
+      <wsdl:output message="tns:addTipoMonedaResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="updateTipoMoneda">
+      <wsdl:input message="tns:updateTipoMonedaRequest" />
+      <wsdl:output message="tns:updateTipoMonedaResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getTipoMoneda">
+      <wsdl:input message="tns:getTipoMonedaRequest" />
+      <wsdl:output message="tns:getTipoMonedaResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteTipoMoneda">
+      <wsdl:input message="tns:deleteTipoMonedaRequest" />
+      <wsdl:output message="tns:deleteTipoMonedaResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServicioCasosFiscalesBinding" type="tns:ServicioCasosFiscalesPortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc" />
+    <wsdl:operation name="addAbogados">
+      <soap:operation soapAction="http://www.vgcorporativo.com/sistema/ws.php/addAbogados" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateAbogados">
+      <soap:operation soapAction="http://www.vgcorporativo.com/sistema/ws.php/updateAbogados" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAbogados">
+      <soap:operation soapAction="http://www.vgcorporativo.com/sistema/ws.php/getAbogados" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteAbogados">
+      <soap:operation soapAction="http://www.vgcorporativo.com/sistema/ws.php/deleteAbogados" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="login">
+      <soap:operation soapAction="http://www.vgcorporativo.com/sistema/ws.php/login" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addCliente">
+      <soap:operation soapAction="http://www.vgcorporativo.com/sistema/ws.php/addCliente" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateCliente">
+      <soap:operation soapAction="http://www.vgcorporativo.com/sistema/ws.php/updateCliente" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCliente">
+      <soap:operation soapAction="http://www.vgcorporativo.com/sistema/ws.php/getCliente" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteCliente">
+      <soap:operation soapAction="http://www.vgcorporativo.com/sistema/ws.php/deleteCliente" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addAsunto">
+      <soap:operation soapAction="http://www.vgcorporativo.com/sistema/ws.php/addAsunto" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateAsunto">
+      <soap:operation soapAction="http://www.vgcorporativo.com/sistema/ws.php/updateAsunto" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addArchivo">
+      <soap:operation soapAction="http://www.vgcorporativo.com/sistema/ws.php/addArchivo" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteArchivo">
+      <soap:operation soapAction="http://www.vgcorporativo.com/sistema/ws.php/deleteArchivo" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getArchivo">
+      <soap:operation soapAction="http://www.vgcorporativo.com/sistema/ws.php/getArchivo" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAsunto">
+      <soap:operation soapAction="http://www.vgcorporativo.com/sistema/ws.php/getAsunto" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAsunto2">
+      <soap:operation soapAction="http://www.vgcorporativo.com/sistema/ws.php/getAsunto2" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteAsunto">
+      <soap:operation soapAction="http://www.vgcorporativo.com/sistema/ws.php/deleteAsunto" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addAutoridad">
+      <soap:operation soapAction="http://www.vgcorporativo.com/sistema/ws.php/addAutoridad" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateAutoridad">
+      <soap:operation soapAction="http://www.vgcorporativo.com/sistema/ws.php/updateAutoridad" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAutoridad">
+      <soap:operation soapAction="http://www.vgcorporativo.com/sistema/ws.php/getAutoridad" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteAutoridad">
+      <soap:operation soapAction="http://www.vgcorporativo.com/sistema/ws.php/deleteAutoridad" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addCita">
+      <soap:operation soapAction="http://www.vgcorporativo.com/sistema/ws.php/addCita" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateCita">
+      <soap:operation soapAction="http://www.vgcorporativo.com/sistema/ws.php/updateCita" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCita">
+      <soap:operation soapAction="http://www.vgcorporativo.com/sistema/ws.php/getCita" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteCita">
+      <soap:operation soapAction="http://www.vgcorporativo.com/sistema/ws.php/deleteCita" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addConvenio">
+      <soap:operation soapAction="http://www.vgcorporativo.com/sistema/ws.php/addConvenio" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateConvenio">
+      <soap:operation soapAction="http://www.vgcorporativo.com/sistema/ws.php/updateConvenio" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getConvenio">
+      <soap:operation soapAction="http://www.vgcorporativo.com/sistema/ws.php/getConvenio" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteConvenio">
+      <soap:operation soapAction="http://www.vgcorporativo.com/sistema/ws.php/deleteConvenio" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addDiaNoHabil">
+      <soap:operation soapAction="http://www.vgcorporativo.com/sistema/ws.php/addDiaNoHabil" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateDiaNoHabil">
+      <soap:operation soapAction="http://www.vgcorporativo.com/sistema/ws.php/updateDiaNoHabil" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDiaNoHabil">
+      <soap:operation soapAction="http://www.vgcorporativo.com/sistema/ws.php/getDiaNoHabil" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteDiaNoHabil">
+      <soap:operation soapAction="http://www.vgcorporativo.com/sistema/ws.php/deleteDiaNoHabil" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addEstadoAsunto">
+      <soap:operation soapAction="http://www.vgcorporativo.com/sistema/ws.php/addEstadoAsunto" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateEstadoAsunto">
+      <soap:operation soapAction="http://www.vgcorporativo.com/sistema/ws.php/updateEstadoAsunto" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getEstadoAsunto">
+      <soap:operation soapAction="http://www.vgcorporativo.com/sistema/ws.php/getEstadoAsunto" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteEstadoAsunto">
+      <soap:operation soapAction="http://www.vgcorporativo.com/sistema/ws.php/deleteEstadoAsunto" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addEstadoProceso">
+      <soap:operation soapAction="http://www.vgcorporativo.com/sistema/ws.php/addEstadoProceso" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateEstadoProceso">
+      <soap:operation soapAction="http://www.vgcorporativo.com/sistema/ws.php/updateEstadoProceso" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getEstadoProceso">
+      <soap:operation soapAction="http://www.vgcorporativo.com/sistema/ws.php/getEstadoProceso" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteEstadoProceso">
+      <soap:operation soapAction="http://www.vgcorporativo.com/sistema/ws.php/deleteEstadoProceso" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addEtapa">
+      <soap:operation soapAction="http://www.vgcorporativo.com/sistema/ws.php/addEtapa" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateEtapa">
+      <soap:operation soapAction="http://www.vgcorporativo.com/sistema/ws.php/updateEtapa" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getEtapa">
+      <soap:operation soapAction="http://www.vgcorporativo.com/sistema/ws.php/getEtapa" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteEtapa">
+      <soap:operation soapAction="http://www.vgcorporativo.com/sistema/ws.php/deleteEtapa" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addPago">
+      <soap:operation soapAction="http://www.vgcorporativo.com/sistema/ws.php/addPago" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updatePago">
+      <soap:operation soapAction="http://www.vgcorporativo.com/sistema/ws.php/updatePago" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPago">
+      <soap:operation soapAction="http://www.vgcorporativo.com/sistema/ws.php/getPago" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deletePago">
+      <soap:operation soapAction="http://www.vgcorporativo.com/sistema/ws.php/deletePago" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addProceso">
+      <soap:operation soapAction="http://www.vgcorporativo.com/sistema/ws.php/addProceso" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateProceso">
+      <soap:operation soapAction="http://www.vgcorporativo.com/sistema/ws.php/updateProceso" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getProceso">
+      <soap:operation soapAction="http://www.vgcorporativo.com/sistema/ws.php/getProceso" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteProceso">
+      <soap:operation soapAction="http://www.vgcorporativo.com/sistema/ws.php/deleteProceso" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addTipoMoneda">
+      <soap:operation soapAction="http://www.vgcorporativo.com/sistema/ws.php/addTipoMoneda" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateTipoMoneda">
+      <soap:operation soapAction="http://www.vgcorporativo.com/sistema/ws.php/updateTipoMoneda" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getTipoMoneda">
+      <soap:operation soapAction="http://www.vgcorporativo.com/sistema/ws.php/getTipoMoneda" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteTipoMoneda">
+      <soap:operation soapAction="http://www.vgcorporativo.com/sistema/ws.php/deleteTipoMoneda" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServicioCasosFiscales">
+    <wsdl:port name="ServicioCasosFiscalesPort" binding="tns:ServicioCasosFiscalesBinding">
+      <soap:address location="http://www.vgcorporativo.com/sistema/ws.php" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

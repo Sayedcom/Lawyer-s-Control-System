@@ -1,0 +1,220 @@
+[25-Nov-2010 00:38:49] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/ws.php:7) in /home/vgcorpor/public_html/sistema/lib/nusoap.php on line 3281
+[25-Nov-2010 00:42:55] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/ws.php:7) in /home/vgcorpor/public_html/sistema/lib/nusoap.php on line 3778
+[25-Nov-2010 00:42:55] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/ws.php:7) in /home/vgcorpor/public_html/sistema/lib/nusoap.php on line 3778
+[25-Nov-2010 00:42:55] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/ws.php:7) in /home/vgcorpor/public_html/sistema/lib/nusoap.php on line 3778
+[25-Nov-2010 00:42:55] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/ws.php:7) in /home/vgcorpor/public_html/sistema/lib/nusoap.php on line 3778
+[25-Nov-2010 00:42:55] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/ws.php:7) in /home/vgcorpor/public_html/sistema/lib/nusoap.php on line 3778
+[25-Nov-2010 00:42:55] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/ws.php:7) in /home/vgcorpor/public_html/sistema/lib/nusoap.php on line 3778
+[25-Nov-2010 00:42:56] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/ws.php:7) in /home/vgcorpor/public_html/sistema/lib/nusoap.php on line 3778
+[25-Nov-2010 00:42:56] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/ws.php:7) in /home/vgcorpor/public_html/sistema/lib/nusoap.php on line 3778
+[25-Nov-2010 00:42:56] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/ws.php:7) in /home/vgcorpor/public_html/sistema/lib/nusoap.php on line 3778
+[25-Nov-2010 00:42:56] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/ws.php:7) in /home/vgcorpor/public_html/sistema/lib/nusoap.php on line 3778
+[25-Nov-2010 00:42:56] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/ws.php:7) in /home/vgcorpor/public_html/sistema/lib/nusoap.php on line 3778
+[25-Nov-2010 00:42:56] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/ws.php:7) in /home/vgcorpor/public_html/sistema/lib/nusoap.php on line 3778
+[25-Nov-2010 00:44:39] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/ws.php:7) in /home/vgcorpor/public_html/sistema/lib/nusoap.php on line 3281
+[25-Nov-2010 00:44:39] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/ws.php:7) in /home/vgcorpor/public_html/sistema/lib/nusoap.php on line 3281
+[25-Nov-2010 00:44:39] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/ws.php:7) in /home/vgcorpor/public_html/sistema/lib/nusoap.php on line 3281
+[25-Nov-2010 00:44:40] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/ws.php:7) in /home/vgcorpor/public_html/sistema/lib/nusoap.php on line 3281
+[25-Nov-2010 00:44:41] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/ws.php:7) in /home/vgcorpor/public_html/sistema/lib/nusoap.php on line 3281
+[25-Nov-2010 00:44:42] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/ws.php:7) in /home/vgcorpor/public_html/sistema/lib/nusoap.php on line 3281
+[25-Nov-2010 00:44:42] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/ws.php:7) in /home/vgcorpor/public_html/sistema/lib/nusoap.php on line 3281
+[25-Nov-2010 00:52:28] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/ws.php:2) in /home/vgcorpor/public_html/sistema/lib/nusoap.php on line 3281
+[25-Nov-2010 00:52:45] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/ws.php:2) in /home/vgcorpor/public_html/sistema/lib/nusoap.php on line 3281
+[25-Nov-2010 03:10:28] PHP Parse error:  syntax error, unexpected '{' in /home/vgcorpor/public_html/sistema/ws.php on line 23
+[25-Nov-2010 03:27:50] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Unknown MySQL server host 'http' (1) in /home/vgcorpor/public_html/sistema/ws.php on line 6
+[25-Nov-2010 03:30:06] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Unknown MySQL server host 'http' (1) in /home/vgcorpor/public_html/sistema/ws.php on line 6
+[25-Nov-2010 03:34:11] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Unknown MySQL server host 'http' (1) in /home/vgcorpor/public_html/sistema/ws.php on line 6
+[25-Nov-2010 03:37:30] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Unknown MySQL server host 'http' (1) in /home/vgcorpor/public_html/sistema/prueba.php on line 3
+[25-Nov-2010 03:37:59] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'vgcorpor'@'174.120.129.7' (using password: YES) in /home/vgcorpor/public_html/sistema/prueba.php on line 3
+[25-Nov-2010 03:40:54] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'vgcorpor'@'174.120.129.7' (using password: YES) in /home/vgcorpor/public_html/sistema/prueba.php on line 3
+[25-Nov-2010 10:30:19] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'vgcorpor'@'174.120.129.7' (using password: YES) in /home/vgcorpor/public_html/sistema/prueba.php on line 3
+[25-Nov-2010 11:46:54] PHP Parse error:  syntax error, unexpected T_INC, expecting ')' in /home/vgcorpor/public_html/sistema/prueba.php on line 26
+[25-Nov-2010 11:48:07] PHP Parse error:  syntax error, unexpected T_INC, expecting ')' in /home/vgcorpor/public_html/sistema/prueba.php on line 26
+[25-Nov-2010 11:48:09] PHP Parse error:  syntax error, unexpected T_INC, expecting ')' in /home/vgcorpor/public_html/sistema/prueba.php on line 26
+[25-Nov-2010 11:50:17] PHP Parse error:  syntax error, unexpected T_INC, expecting ')' in /home/vgcorpor/public_html/sistema/prueba.php on line 26
+[25-Nov-2010 11:50:39] PHP Parse error:  syntax error, unexpected T_INC, expecting ')' in /home/vgcorpor/public_html/sistema/prueba.php on line 26
+[25-Nov-2010 11:50:54] PHP Warning:  mysql_query(): supplied argument is not a valid MySQL-Link resource in /home/vgcorpor/public_html/sistema/prueba.php on line 11
+[25-Nov-2010 12:11:01] PHP Warning:  mysql_close(): supplied argument is not a valid MySQL-Link resource in /home/vgcorpor/public_html/sistema/prueba.php on line 30
+[25-Nov-2010 12:11:44] PHP Warning:  mysql_close(): supplied argument is not a valid MySQL-Link resource in /home/vgcorpor/public_html/sistema/prueba.php on line 30
+[25-Nov-2010 12:11:46] PHP Warning:  mysql_close(): supplied argument is not a valid MySQL-Link resource in /home/vgcorpor/public_html/sistema/prueba.php on line 30
+[25-Nov-2010 12:25:27] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home/vgcorpor/public_html/sistema/ws.php on line 14
+[25-Nov-2010 12:25:27] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/ws.php:14) in /home/vgcorpor/public_html/sistema/lib/nusoap.php on line 3778
+[25-Nov-2010 12:25:27] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/ws.php:14) in /home/vgcorpor/public_html/sistema/lib/nusoap.php on line 3778
+[25-Nov-2010 12:25:27] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/ws.php:14) in /home/vgcorpor/public_html/sistema/lib/nusoap.php on line 3778
+[25-Nov-2010 12:25:27] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/ws.php:14) in /home/vgcorpor/public_html/sistema/lib/nusoap.php on line 3778
+[25-Nov-2010 12:26:26] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home/vgcorpor/public_html/sistema/ws.php on line 13
+[25-Nov-2010 12:26:26] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/ws.php:13) in /home/vgcorpor/public_html/sistema/lib/nusoap.php on line 3778
+[25-Nov-2010 12:26:26] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/ws.php:13) in /home/vgcorpor/public_html/sistema/lib/nusoap.php on line 3778
+[25-Nov-2010 12:26:26] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/ws.php:13) in /home/vgcorpor/public_html/sistema/lib/nusoap.php on line 3778
+[25-Nov-2010 12:26:26] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/ws.php:13) in /home/vgcorpor/public_html/sistema/lib/nusoap.php on line 3778
+[25-Nov-2010 12:29:01] PHP Warning:  mysql_close(): supplied argument is not a valid MySQL-Link resource in /home/vgcorpor/public_html/sistema/ws.php on line 25
+[25-Nov-2010 12:29:01] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/ws.php:25) in /home/vgcorpor/public_html/sistema/lib/nusoap.php on line 3778
+[25-Nov-2010 12:29:01] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/ws.php:25) in /home/vgcorpor/public_html/sistema/lib/nusoap.php on line 3778
+[25-Nov-2010 12:29:01] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/ws.php:25) in /home/vgcorpor/public_html/sistema/lib/nusoap.php on line 3778
+[25-Nov-2010 12:29:01] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/ws.php:25) in /home/vgcorpor/public_html/sistema/lib/nusoap.php on line 3778
+[28-Nov-2010 14:16:16] PHP Parse error:  syntax error, unexpected '{' in /home/vgcorpor/public_html/sistema/ws.php on line 37
+[28-Nov-2010 21:45:31] PHP Parse error:  syntax error, unexpected ',' in /home/vgcorpor/public_html/sistema/ws.php on line 142
+[28-Nov-2010 21:45:32] PHP Parse error:  syntax error, unexpected ',' in /home/vgcorpor/public_html/sistema/ws.php on line 142
+[28-Nov-2010 21:45:32] PHP Parse error:  syntax error, unexpected ',' in /home/vgcorpor/public_html/sistema/ws.php on line 142
+[28-Nov-2010 21:45:36] PHP Parse error:  syntax error, unexpected ',' in /home/vgcorpor/public_html/sistema/ws.php on line 142
+[28-Nov-2010 21:45:37] PHP Parse error:  syntax error, unexpected ',' in /home/vgcorpor/public_html/sistema/ws.php on line 142
+[28-Nov-2010 21:45:37] PHP Parse error:  syntax error, unexpected ',' in /home/vgcorpor/public_html/sistema/ws.php on line 142
+[28-Nov-2010 21:45:48] PHP Parse error:  syntax error, unexpected ',' in /home/vgcorpor/public_html/sistema/ws.php on line 142
+[28-Nov-2010 22:07:45] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/Database.singleton.php:272) in /home/vgcorpor/public_html/sistema/lib/nusoap.php on line 3778
+[28-Nov-2010 22:07:45] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/Database.singleton.php:272) in /home/vgcorpor/public_html/sistema/lib/nusoap.php on line 3778
+[28-Nov-2010 22:07:45] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/Database.singleton.php:272) in /home/vgcorpor/public_html/sistema/lib/nusoap.php on line 3778
+[28-Nov-2010 22:07:45] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/Database.singleton.php:272) in /home/vgcorpor/public_html/sistema/lib/nusoap.php on line 3778
+[28-Nov-2010 22:14:25] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/Database.singleton.php:272) in /home/vgcorpor/public_html/sistema/lib/nusoap.php on line 3778
+[28-Nov-2010 22:14:25] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/Database.singleton.php:272) in /home/vgcorpor/public_html/sistema/lib/nusoap.php on line 3778
+[28-Nov-2010 22:14:25] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/Database.singleton.php:272) in /home/vgcorpor/public_html/sistema/lib/nusoap.php on line 3778
+[28-Nov-2010 22:14:25] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/Database.singleton.php:272) in /home/vgcorpor/public_html/sistema/lib/nusoap.php on line 3778
+[28-Nov-2010 22:32:06] PHP Fatal error:  Call to undefined function  oops() in /home/vgcorpor/public_html/sistema/Database.singleton.php on line 240
+[28-Nov-2010 22:32:07] PHP Fatal error:  Call to undefined function  oops() in /home/vgcorpor/public_html/sistema/Database.singleton.php on line 240
+[28-Nov-2010 22:47:14] PHP Parse error:  syntax error, unexpected T_LOGICAL_OR in /home/vgcorpor/public_html/sistema/ws.php on line 51
+[28-Nov-2010 22:47:14] PHP Parse error:  syntax error, unexpected T_LOGICAL_OR in /home/vgcorpor/public_html/sistema/ws.php on line 51
+[28-Nov-2010 22:47:14] PHP Parse error:  syntax error, unexpected T_LOGICAL_OR in /home/vgcorpor/public_html/sistema/ws.php on line 51
+[28-Nov-2010 22:47:24] PHP Parse error:  syntax error, unexpected T_LOGICAL_OR in /home/vgcorpor/public_html/sistema/ws.php on line 51
+[28-Nov-2010 23:02:04] PHP Parse error:  syntax error, unexpected T_RETURN in /home/vgcorpor/public_html/sistema/ws.php on line 54
+[28-Nov-2010 23:05:33] PHP Parse error:  syntax error, unexpected T_RETURN in /home/vgcorpor/public_html/sistema/ws.php on line 54
+[29-Nov-2010 00:55:45] PHP Warning:  sprintf() [<a href='function.sprintf'>function.sprintf</a>]: Too few arguments in /home/vgcorpor/public_html/sistema/ws.php on line 105
+[29-Nov-2010 01:55:13] PHP Warning:  sprintf() [<a href='function.sprintf'>function.sprintf</a>]: Too few arguments in /home/vgcorpor/public_html/sistema/ws.php on line 108
+[29-Nov-2010 01:55:13] PHP Warning:  sprintf() [<a href='function.sprintf'>function.sprintf</a>]: Too few arguments in /home/vgcorpor/public_html/sistema/ws.php on line 108
+[29-Nov-2010 01:55:16] PHP Warning:  sprintf() [<a href='function.sprintf'>function.sprintf</a>]: Too few arguments in /home/vgcorpor/public_html/sistema/ws.php on line 108
+[29-Nov-2010 01:55:33] PHP Warning:  sprintf() [<a href='function.sprintf'>function.sprintf</a>]: Too few arguments in /home/vgcorpor/public_html/sistema/ws.php on line 108
+[29-Nov-2010 01:56:16] PHP Warning:  sprintf() [<a href='function.sprintf'>function.sprintf</a>]: Too few arguments in /home/vgcorpor/public_html/sistema/ws.php on line 108
+[29-Nov-2010 01:58:08] PHP Warning:  sprintf() [<a href='function.sprintf'>function.sprintf</a>]: Too few arguments in /home/vgcorpor/public_html/sistema/ws.php on line 108
+[29-Nov-2010 01:58:29] PHP Warning:  sprintf() [<a href='function.sprintf'>function.sprintf</a>]: Too few arguments in /home/vgcorpor/public_html/sistema/ws.php on line 108
+[29-Nov-2010 02:04:14] PHP Warning:  sprintf() [<a href='function.sprintf'>function.sprintf</a>]: Too few arguments in /home/vgcorpor/public_html/sistema/ws.php on line 108
+[29-Nov-2010 02:55:00] PHP Warning:  sprintf() [<a href='function.sprintf'>function.sprintf</a>]: Too few arguments in /home/vgcorpor/public_html/sistema/ws.php on line 108
+[29-Nov-2010 02:58:04] PHP Warning:  sprintf() [<a href='function.sprintf'>function.sprintf</a>]: Too few arguments in /home/vgcorpor/public_html/sistema/ws.php on line 108
+[29-Nov-2010 02:58:46] PHP Warning:  sprintf() [<a href='function.sprintf'>function.sprintf</a>]: Too few arguments in /home/vgcorpor/public_html/sistema/ws.php on line 110
+[29-Nov-2010 02:59:03] PHP Warning:  sprintf() [<a href='function.sprintf'>function.sprintf</a>]: Too few arguments in /home/vgcorpor/public_html/sistema/ws.php on line 110
+[29-Nov-2010 03:43:18] PHP Warning:  sprintf() [<a href='function.sprintf'>function.sprintf</a>]: Too few arguments in /home/vgcorpor/public_html/sistema/ws.php on line 110
+[29-Nov-2010 03:45:09] PHP Warning:  sprintf() [<a href='function.sprintf'>function.sprintf</a>]: Too few arguments in /home/vgcorpor/public_html/sistema/ws.php on line 110
+[29-Nov-2010 03:45:21] PHP Warning:  sprintf() [<a href='function.sprintf'>function.sprintf</a>]: Too few arguments in /home/vgcorpor/public_html/sistema/ws.php on line 111
+[29-Nov-2010 06:47:24] PHP Warning:  Wrong parameter count for mysql_query() in /home/vgcorpor/public_html/sistema/ws.php on line 86
+[29-Nov-2010 06:49:35] PHP Warning:  Wrong parameter count for mysql_query() in /home/vgcorpor/public_html/sistema/ws.php on line 86
+[29-Nov-2010 06:50:15] PHP Warning:  Wrong parameter count for mysql_query() in /home/vgcorpor/public_html/sistema/ws.php on line 86
+[29-Nov-2010 06:50:27] PHP Warning:  Wrong parameter count for mysql_query() in /home/vgcorpor/public_html/sistema/ws.php on line 86
+[29-Nov-2010 06:52:14] PHP Warning:  Wrong parameter count for mysql_query() in /home/vgcorpor/public_html/sistema/ws.php on line 86
+[29-Nov-2010 06:56:16] PHP Warning:  Wrong parameter count for mysql_query() in /home/vgcorpor/public_html/sistema/ws.php on line 85
+[29-Nov-2010 07:04:16] PHP Warning:  Wrong parameter count for mysql_query() in /home/vgcorpor/public_html/sistema/ws.php on line 85
+[29-Nov-2010 11:46:14] PHP Parse error:  syntax error, unexpected $end in /home/vgcorpor/public_html/sistema/ws.php on line 886
+[29-Nov-2010 11:48:28] PHP Parse error:  syntax error, unexpected $end in /home/vgcorpor/public_html/sistema/ws.php on line 886
+[29-Nov-2010 11:49:09] PHP Parse error:  syntax error, unexpected $end in /home/vgcorpor/public_html/sistema/ws.php on line 884
+[29-Nov-2010 11:51:56] PHP Parse error:  syntax error, unexpected $end in /home/vgcorpor/public_html/sistema/ws.php on line 884
+[29-Nov-2010 11:52:00] PHP Parse error:  syntax error, unexpected $end in /home/vgcorpor/public_html/sistema/ws.php on line 884
+[29-Nov-2010 11:52:49] PHP Parse error:  syntax error, unexpected $end in /home/vgcorpor/public_html/sistema/ws.php on line 884
+[29-Nov-2010 11:52:50] PHP Parse error:  syntax error, unexpected $end in /home/vgcorpor/public_html/sistema/ws.php on line 884
+[29-Nov-2010 11:52:51] PHP Parse error:  syntax error, unexpected $end in /home/vgcorpor/public_html/sistema/ws.php on line 884
+[30-Nov-2010 12:55:18] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in /home/vgcorpor/public_html/sistema/ws.php on line 2137
+[30-Nov-2010 12:58:41] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in /home/vgcorpor/public_html/sistema/ws.php on line 2136
+[30-Nov-2010 12:58:44] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in /home/vgcorpor/public_html/sistema/ws.php on line 2136
+[30-Nov-2010 12:58:47] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in /home/vgcorpor/public_html/sistema/ws.php on line 2136
+[30-Nov-2010 13:02:26] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in /home/vgcorpor/public_html/sistema/ws.php on line 2156
+[30-Nov-2010 13:02:27] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in /home/vgcorpor/public_html/sistema/ws.php on line 2156
+[30-Nov-2010 13:02:28] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in /home/vgcorpor/public_html/sistema/ws.php on line 2156
+[30-Nov-2010 13:02:28] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in /home/vgcorpor/public_html/sistema/ws.php on line 2156
+[30-Nov-2010 13:08:01] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in /home/vgcorpor/public_html/sistema/ws.php on line 2154
+[30-Nov-2010 13:11:02] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in /home/vgcorpor/public_html/sistema/ws.php on line 2157
+[30-Nov-2010 13:11:04] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in /home/vgcorpor/public_html/sistema/ws.php on line 2157
+[30-Nov-2010 13:11:26] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in /home/vgcorpor/public_html/sistema/ws.php on line 2187
+[30-Nov-2010 13:12:32] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in /home/vgcorpor/public_html/sistema/ws.php on line 2187
+[30-Nov-2010 13:12:39] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in /home/vgcorpor/public_html/sistema/ws.php on line 2187
+[30-Nov-2010 13:12:59] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in /home/vgcorpor/public_html/sistema/ws.php on line 2201
+[30-Nov-2010 13:13:13] PHP Parse error:  syntax error, unexpected $end in /home/vgcorpor/public_html/sistema/ws.php on line 1080
+[02-Dec-2010 08:08:18] PHP Parse error:  syntax error, unexpected T_INC in /home/vgcorpor/public_html/sistema/ws.php on line 1282
+[02-Dec-2010 14:49:32] PHP Fatal error:  Cannot redeclare deleteasunto() (previously declared in /home/vgcorpor/public_html/sistema/ws.php:398) in /home/vgcorpor/public_html/sistema/ws.php on line 428
+[02-Dec-2010 14:50:05] PHP Parse error:  syntax error, unexpected T_ARRAY, expecting ')' in /home/vgcorpor/public_html/sistema/ws.php on line 2169
+[02-Dec-2010 14:50:22] PHP Parse error:  syntax error, unexpected T_ARRAY, expecting ')' in /home/vgcorpor/public_html/sistema/ws.php on line 2169
+[02-Dec-2010 14:50:24] PHP Parse error:  syntax error, unexpected T_ARRAY, expecting ')' in /home/vgcorpor/public_html/sistema/ws.php on line 2169
+[02-Dec-2010 14:50:27] PHP Parse error:  syntax error, unexpected T_ARRAY, expecting ')' in /home/vgcorpor/public_html/sistema/ws.php on line 2169
+[02-Dec-2010 14:50:30] PHP Parse error:  syntax error, unexpected T_ARRAY, expecting ')' in /home/vgcorpor/public_html/sistema/ws.php on line 2169
+[02-Dec-2010 14:50:31] PHP Parse error:  syntax error, unexpected T_ARRAY, expecting ')' in /home/vgcorpor/public_html/sistema/ws.php on line 2169
+[02-Dec-2010 14:51:31] PHP Parse error:  syntax error, unexpected T_ARRAY, expecting ')' in /home/vgcorpor/public_html/sistema/ws.php on line 2169
+[02-Dec-2010 14:51:33] PHP Parse error:  syntax error, unexpected T_ARRAY, expecting ')' in /home/vgcorpor/public_html/sistema/ws.php on line 2169
+[02-Dec-2010 14:51:35] PHP Parse error:  syntax error, unexpected T_ARRAY, expecting ')' in /home/vgcorpor/public_html/sistema/ws.php on line 2169
+[02-Dec-2010 15:47:34] PHP Warning:  Missing argument 7 for addArchivo() in /home/vgcorpor/public_html/sistema/ws.php on line 115
+[02-Dec-2010 19:19:53] PHP Warning:  Missing argument 10 for updateAsunto() in /home/vgcorpor/public_html/sistema/ws.php on line 662
+[02-Dec-2010 19:19:53] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/ws.php:662) in /home/vgcorpor/public_html/sistema/lib/nusoap.php on line 3778
+[02-Dec-2010 19:19:53] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/ws.php:662) in /home/vgcorpor/public_html/sistema/lib/nusoap.php on line 3778
+[02-Dec-2010 19:19:53] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/ws.php:662) in /home/vgcorpor/public_html/sistema/lib/nusoap.php on line 3778
+[02-Dec-2010 19:19:53] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/ws.php:662) in /home/vgcorpor/public_html/sistema/lib/nusoap.php on line 3778
+[02-Dec-2010 19:23:43] PHP Warning:  Missing argument 10 for updateAsunto() in /home/vgcorpor/public_html/sistema/ws.php on line 662
+[02-Dec-2010 19:23:43] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/ws.php:662) in /home/vgcorpor/public_html/sistema/lib/nusoap.php on line 3778
+[02-Dec-2010 19:23:43] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/ws.php:662) in /home/vgcorpor/public_html/sistema/lib/nusoap.php on line 3778
+[02-Dec-2010 19:23:43] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/ws.php:662) in /home/vgcorpor/public_html/sistema/lib/nusoap.php on line 3778
+[02-Dec-2010 19:23:43] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/ws.php:662) in /home/vgcorpor/public_html/sistema/lib/nusoap.php on line 3778
+[07-Dec-2010 16:18:42] PHP Warning:  readfile() [<a href='function.readfile'>function.readfile</a>]: Filename cannot be empty in /home/vgcorpor/public_html/sistema/download.php on line 14
+[07-Dec-2010 16:22:37] PHP Warning:  filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for 'abc.txt' in /home/vgcorpor/public_html/sistema/download.php on line 11
+[07-Dec-2010 16:22:37] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/download.php:11) in /home/vgcorpor/public_html/sistema/download.php on line 11
+[07-Dec-2010 16:22:37] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/download.php:11) in /home/vgcorpor/public_html/sistema/download.php on line 13
+[07-Dec-2010 16:22:37] PHP Warning:  readfile('abc.txt') [<a href='function.readfile'>function.readfile</a>]: failed to open stream: No such file or directory in /home/vgcorpor/public_html/sistema/download.php on line 14
+[07-Dec-2010 16:22:43] PHP Warning:  filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for abc.txt in /home/vgcorpor/public_html/sistema/download.php on line 11
+[07-Dec-2010 16:22:43] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/download.php:11) in /home/vgcorpor/public_html/sistema/download.php on line 11
+[07-Dec-2010 16:22:43] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/download.php:11) in /home/vgcorpor/public_html/sistema/download.php on line 13
+[07-Dec-2010 16:22:43] PHP Warning:  readfile(abc.txt) [<a href='function.readfile'>function.readfile</a>]: failed to open stream: No such file or directory in /home/vgcorpor/public_html/sistema/download.php on line 14
+[07-Dec-2010 16:22:48] PHP Warning:  filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for abc.txt in /home/vgcorpor/public_html/sistema/download.php on line 11
+[07-Dec-2010 16:22:48] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/download.php:11) in /home/vgcorpor/public_html/sistema/download.php on line 11
+[07-Dec-2010 16:22:48] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/download.php:11) in /home/vgcorpor/public_html/sistema/download.php on line 13
+[07-Dec-2010 16:22:48] PHP Warning:  readfile(abc.txt) [<a href='function.readfile'>function.readfile</a>]: failed to open stream: No such file or directory in /home/vgcorpor/public_html/sistema/download.php on line 14
+[07-Dec-2010 16:22:56] PHP Warning:  filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for abc.tx in /home/vgcorpor/public_html/sistema/download.php on line 11
+[07-Dec-2010 16:22:56] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/download.php:11) in /home/vgcorpor/public_html/sistema/download.php on line 11
+[07-Dec-2010 16:22:56] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/download.php:11) in /home/vgcorpor/public_html/sistema/download.php on line 13
+[07-Dec-2010 16:22:56] PHP Warning:  readfile(abc.tx) [<a href='function.readfile'>function.readfile</a>]: failed to open stream: No such file or directory in /home/vgcorpor/public_html/sistema/download.php on line 14
+[07-Dec-2010 16:23:00] PHP Warning:  readfile() [<a href='function.readfile'>function.readfile</a>]: Filename cannot be empty in /home/vgcorpor/public_html/sistema/download.php on line 14
+[07-Dec-2010 16:23:53] PHP Warning:  filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for archivos/abc.tx in /home/vgcorpor/public_html/sistema/download.php on line 11
+[07-Dec-2010 16:23:53] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/download.php:11) in /home/vgcorpor/public_html/sistema/download.php on line 11
+[07-Dec-2010 16:23:53] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/download.php:11) in /home/vgcorpor/public_html/sistema/download.php on line 13
+[07-Dec-2010 16:23:53] PHP Warning:  readfile(archivos/abc.tx) [<a href='function.readfile'>function.readfile</a>]: failed to open stream: No such file or directory in /home/vgcorpor/public_html/sistema/download.php on line 14
+[07-Dec-2010 16:24:48] PHP Warning:  filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for archivos/System.Windows.Forms.ListView SelectedListViewItemCollection in /home/vgcorpor/public_html/sistema/download.php on line 11
+[07-Dec-2010 16:24:48] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/download.php:11) in /home/vgcorpor/public_html/sistema/download.php on line 11
+[07-Dec-2010 16:24:48] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/download.php:11) in /home/vgcorpor/public_html/sistema/download.php on line 13
+[07-Dec-2010 16:24:48] PHP Warning:  readfile(archivos/System.Windows.Forms.ListView SelectedListViewItemCollection) [<a href='function.readfile'>function.readfile</a>]: failed to open stream: No such file or directory in /home/vgcorpor/public_html/sistema/download.php on line 14
+[07-Dec-2010 16:38:38] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home/vgcorpor/public_html/sistema/ws.php on line 430
+[07-Dec-2010 16:38:38] PHP Warning:  unlink(archivos/) [<a href='function.unlink'>function.unlink</a>]: Is a directory in /home/vgcorpor/public_html/sistema/ws.php on line 434
+[07-Dec-2010 16:38:38] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/ws.php:430) in /home/vgcorpor/public_html/sistema/lib/nusoap.php on line 3778
+[07-Dec-2010 16:38:38] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/ws.php:430) in /home/vgcorpor/public_html/sistema/lib/nusoap.php on line 3778
+[07-Dec-2010 16:38:38] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/ws.php:430) in /home/vgcorpor/public_html/sistema/lib/nusoap.php on line 3778
+[07-Dec-2010 16:38:38] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/ws.php:430) in /home/vgcorpor/public_html/sistema/lib/nusoap.php on line 3778
+[07-Dec-2010 16:40:37] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home/vgcorpor/public_html/sistema/ws.php on line 430
+[07-Dec-2010 16:40:37] PHP Warning:  unlink(archivos/) [<a href='function.unlink'>function.unlink</a>]: Is a directory in /home/vgcorpor/public_html/sistema/ws.php on line 434
+[07-Dec-2010 16:40:37] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/ws.php:430) in /home/vgcorpor/public_html/sistema/lib/nusoap.php on line 3778
+[07-Dec-2010 16:40:37] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/ws.php:430) in /home/vgcorpor/public_html/sistema/lib/nusoap.php on line 3778
+[07-Dec-2010 16:40:37] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/ws.php:430) in /home/vgcorpor/public_html/sistema/lib/nusoap.php on line 3778
+[07-Dec-2010 16:40:37] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/ws.php:430) in /home/vgcorpor/public_html/sistema/lib/nusoap.php on line 3778
+[07-Dec-2010 16:44:59] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home/vgcorpor/public_html/sistema/ws.php on line 430
+[07-Dec-2010 16:44:59] PHP Warning:  unlink(archivos/) [<a href='function.unlink'>function.unlink</a>]: Is a directory in /home/vgcorpor/public_html/sistema/ws.php on line 434
+[07-Dec-2010 16:44:59] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/ws.php:430) in /home/vgcorpor/public_html/sistema/lib/nusoap.php on line 3778
+[07-Dec-2010 16:44:59] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/ws.php:430) in /home/vgcorpor/public_html/sistema/lib/nusoap.php on line 3778
+[07-Dec-2010 16:44:59] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/ws.php:430) in /home/vgcorpor/public_html/sistema/lib/nusoap.php on line 3778
+[07-Dec-2010 16:44:59] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/ws.php:430) in /home/vgcorpor/public_html/sistema/lib/nusoap.php on line 3778
+[07-Dec-2010 17:18:48] PHP Warning:  unlink(archivos/) [<a href='function.unlink'>function.unlink</a>]: Is a directory in /home/vgcorpor/public_html/sistema/ws.php on line 430
+[07-Dec-2010 17:18:48] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/ws.php:430) in /home/vgcorpor/public_html/sistema/lib/nusoap.php on line 3778
+[07-Dec-2010 17:18:48] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/ws.php:430) in /home/vgcorpor/public_html/sistema/lib/nusoap.php on line 3778
+[07-Dec-2010 17:18:48] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/ws.php:430) in /home/vgcorpor/public_html/sistema/lib/nusoap.php on line 3778
+[07-Dec-2010 17:18:48] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/ws.php:430) in /home/vgcorpor/public_html/sistema/lib/nusoap.php on line 3778
+[07-Dec-2010 17:22:49] PHP Warning:  unlink(archivos/) [<a href='function.unlink'>function.unlink</a>]: Is a directory in /home/vgcorpor/public_html/sistema/ws.php on line 430
+[07-Dec-2010 17:22:49] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/ws.php:430) in /home/vgcorpor/public_html/sistema/lib/nusoap.php on line 3778
+[07-Dec-2010 17:22:49] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/ws.php:430) in /home/vgcorpor/public_html/sistema/lib/nusoap.php on line 3778
+[07-Dec-2010 17:22:49] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/ws.php:430) in /home/vgcorpor/public_html/sistema/lib/nusoap.php on line 3778
+[07-Dec-2010 17:22:49] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/ws.php:430) in /home/vgcorpor/public_html/sistema/lib/nusoap.php on line 3778
+[07-Dec-2010 17:26:49] PHP Parse error:  syntax error, unexpected '{' in /home/vgcorpor/public_html/sistema/ws.php on line 433
+[07-Dec-2010 17:27:15] PHP Parse error:  syntax error, unexpected $end in /home/vgcorpor/public_html/sistema/ws.php on line 1028
+[07-Dec-2010 17:33:23] PHP Parse error:  syntax error, unexpected '=' in /home/vgcorpor/public_html/sistema/ws.php on line 425
+[07-Dec-2010 17:53:11] PHP Parse error:  syntax error, unexpected $end, expecting ')' in /home/vgcorpor/public_html/sistema/ws.php on line 1734
+[07-Dec-2010 18:41:10] PHP Warning:  filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for archivos/'abc.txt' in /home/vgcorpor/public_html/sistema/download.php on line 11
+[07-Dec-2010 18:41:10] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/download.php:11) in /home/vgcorpor/public_html/sistema/download.php on line 11
+[07-Dec-2010 18:41:10] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/download.php:11) in /home/vgcorpor/public_html/sistema/download.php on line 13
+[07-Dec-2010 18:41:10] PHP Warning:  readfile(archivos/'abc.txt') [<a href='function.readfile'>function.readfile</a>]: failed to open stream: No such file or directory in /home/vgcorpor/public_html/sistema/download.php on line 14
+[07-Dec-2010 18:41:14] PHP Warning:  filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for archivos/'abc.txt' in /home/vgcorpor/public_html/sistema/download.php on line 11
+[07-Dec-2010 18:41:14] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/download.php:11) in /home/vgcorpor/public_html/sistema/download.php on line 11
+[07-Dec-2010 18:41:14] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/download.php:11) in /home/vgcorpor/public_html/sistema/download.php on line 13
+[07-Dec-2010 18:41:14] PHP Warning:  readfile(archivos/'abc.txt') [<a href='function.readfile'>function.readfile</a>]: failed to open stream: No such file or directory in /home/vgcorpor/public_html/sistema/download.php on line 14
+[07-Dec-2010 18:41:18] PHP Warning:  filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for archivos/'abc.txt' in /home/vgcorpor/public_html/sistema/download.php on line 11
+[07-Dec-2010 18:41:18] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/download.php:11) in /home/vgcorpor/public_html/sistema/download.php on line 11
+[07-Dec-2010 18:41:18] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vgcorpor/public_html/sistema/download.php:11) in /home/vgcorpor/public_html/sistema/download.php on line 13
+[07-Dec-2010 18:41:18] PHP Warning:  readfile(archivos/'abc.txt') [<a href='function.readfile'>function.readfile</a>]: failed to open stream: No such file or directory in /home/vgcorpor/public_html/sistema/download.php on line 14
+[13-Dec-2010 10:03:01] PHP Parse error:  syntax error, unexpected T_INC in /home/vgcorpor/public_html/sistema/ws.php on line 1583
+[13-Dec-2010 19:53:36] PHP Warning:  sprintf() [<a href='function.sprintf'>function.sprintf</a>]: Too few arguments in /home/vgcorpor/public_html/sistema/ws.php on line 856
+[13-Dec-2010 19:53:52] PHP Warning:  sprintf() [<a href='function.sprintf'>function.sprintf</a>]: Too few arguments in /home/vgcorpor/public_html/sistema/ws.php on line 856
